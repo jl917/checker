@@ -159,11 +159,7 @@ export default [
     message: '❗️ commitlint',
     hint: 'use to git hook',
     run: () => {
-      try {
-        execa(BIN_COMMITLINT, ['--edit', ...COMMITLINT_CONFIG_OPTION], STDIO_OPTION);
-      } catch {
-        // console.log('❗️ Error: tsc failed.');
-      }
+      execa(BIN_COMMITLINT, ['--edit', ...COMMITLINT_CONFIG_OPTION], STDIO_OPTION);
     },
   },
   // 'markdownlint',
