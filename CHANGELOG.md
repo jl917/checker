@@ -1,3 +1,12 @@
+# [1.0.0-next.6](https://github.com/jl917/checker/compare/v1.0.0-next.5...v1.0.0-next.6) (2021-12-11)
+
+
+### Bug Fixes
+
+* postcss 빌드 추가 ([2ef2eee](https://github.com/jl917/checker/commit/2ef2eee8671ff6d48fd54145e4406054216c05ff))
+* postcss-styl 경로 오류 수정 ([24fccb4](https://github.com/jl917/checker/commit/24fccb49713feecb589fe11d45a742f3f57afd58))
+* postcss-styl경로 수정 ([7ffa073](https://github.com/jl917/checker/commit/7ffa073c020115f46668831184742035a732669d))
+
 # [1.0.0-next.5](https://github.com/jl917/checker/compare/v1.0.0-next.4...v1.0.0-next.5) (2021-12-11)
 
 
