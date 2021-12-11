@@ -162,7 +162,7 @@ export default [
       try {
         execaSync(BIN_COMMITLINT, ['--edit', ...COMMITLINT_CONFIG_OPTION], STDIO_OPTION);
       } catch {
-        // console.log('❗️ Error: tsc failed.');
+        throw new Error('❗️ Error: commitlint failed.');
       }
     },
   },
