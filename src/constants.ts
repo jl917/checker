@@ -20,7 +20,7 @@ export const JEST_CONFIG_OPTION = `--config=${resolve(__dirname, './jest.config.
 export const ESLINT_EXT_OPTION = ['--ext', '.jsx,.js,.ts,.tsx,.mjs,.cjs'];
 export const ESLINT_CONFIG_OPTION = ['--config', `${resolve(__dirname, './eslintrc.js')}`];
 export const STYLELINT_CONFIG_OPTION = ['--config', resolve(__dirname, './stylelint.config.js')];
-export const STYLELINT_SYNTAX_STYLUS = ['--custom-syntax', resolve(__dirname, './postcss-styl')];
+export const STYLELINT_SYNTAX_STYLUS = ['--custom-syntax', resolve(__dirname, './postcss-styl.js')];
 export const STYLELINT_CSS_PATTERN = './src/**/*.css';
 export const STYLELINT_STYLUS_PATTERN = './src/**/*.(styl|stylus)';
 
