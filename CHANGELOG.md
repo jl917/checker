@@ -1,3 +1,10 @@
+# [1.0.0-next.10](https://github.com/jl917/checker/compare/v1.0.0-next.9...v1.0.0-next.10) (2021-12-11)
+
+
+### Bug Fixes
+
+* commitlint 오류 수정 ([c9c64b3](https://github.com/jl917/checker/commit/c9c64b39ff98c6e4a8c2296ba8a2c275af6b399c))
+
 # [1.0.0-next.9](https://github.com/jl917/checker/compare/v1.0.0-next.8...v1.0.0-next.9) (2021-12-11)
 
 
