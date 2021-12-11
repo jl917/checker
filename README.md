@@ -61,4 +61,4 @@ Anyone is welcome to participate in the maintenance and development of this proj
 
 ## License
 
-[MIT](https://github.com/jl917/jnpkg/blob/master/LICENSE)
+[MIT](https://github.com/jl917/jchecker/blob/master/LICENSE)
