@@ -1,3 +1,10 @@
+# [1.0.0-next.7](https://github.com/jl917/checker/compare/v1.0.0-next.6...v1.0.0-next.7) (2021-12-11)
+
+
+### Bug Fixes
+
+* postcss 경로 오류 수정 ([ed93ef5](https://github.com/jl917/checker/commit/ed93ef563a1b06d01a1ff55bcc4aaa4c45c6a7d8))
+
 # [1.0.0-next.6](https://github.com/jl917/checker/compare/v1.0.0-next.5...v1.0.0-next.6) (2021-12-11)
 
 
