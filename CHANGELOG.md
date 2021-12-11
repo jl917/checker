@@ -1,3 +1,10 @@
+# [1.0.0-next.3](https://github.com/jl917/checker/compare/v1.0.0-next.2...v1.0.0-next.3) (2021-12-11)
+
+
+### Bug Fixes
+
+* postcss-styl 경로 이슈 수정 ([4505ea3](https://github.com/jl917/checker/commit/4505ea33f77b85c18cce47e3e6b8c34da9abfbce))
+
 # [1.0.0-next.2](https://github.com/jl917/checker/compare/v1.0.0-next.1...v1.0.0-next.2) (2021-12-11)
 
 
