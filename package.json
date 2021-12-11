@@ -10,8 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "jnpkg buildCli",
-    "watch": "jnpkg watchCli"
+    "build": "node build"
   },
   "repository": {
     "type": "git",
@@ -27,7 +26,9 @@
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
+    "@types/fs-extra": "^9.0.13",
     "enquirer": "^2.3.6",
+    "fs-extra": "^10.0.0",
     "jnpkg": "^2.1.1",
     "semantic-release": "18.0.0"
   },

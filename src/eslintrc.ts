@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import tsConfig from '../tsconfig.json';
 import prettierConfig from './prettier.config';
 
-export default {
+module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {

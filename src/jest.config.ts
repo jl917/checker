@@ -17,6 +17,7 @@ export default {
     '\\.(css|less|styl)$': `<rootDir>../node_modules/identity-obj-proxy`,
   },
   setupFiles: ['<rootDir>/jest/setupFiles.js'],
+  coverageDirectory: resolve('./coverage'),
   coverageThreshold: {
     global: {
       branches: 0,

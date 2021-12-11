@@ -1,7 +1,7 @@
 const esbuild = require('esbuild');
 
 // build
-esbuild.buildSync({
+esbuild.build({
   entryPoints: ['src/index.ts'],
   bundle: true,
   write: true,
@@ -10,6 +10,7 @@ esbuild.buildSync({
   outfile: 'dist/index.js',
   minify: true,
   banner: { js: '#!/usr/bin/env node' },
+  watch: true,
 });
 
 esbuild.buildSync({
