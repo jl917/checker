@@ -1,3 +1,10 @@
+# [1.0.0-next.8](https://github.com/jl917/checker/compare/v1.0.0-next.7...v1.0.0-next.8) (2021-12-11)
+
+
+### Bug Fixes
+
+* commitlint추가 ([8f4883c](https://github.com/jl917/checker/commit/8f4883c63c7c46a384dc2d98f584b2ace7020bb8)), closes [#17](https://github.com/jl917/checker/issues/17)
+
 # [1.0.0-next.7](https://github.com/jl917/checker/compare/v1.0.0-next.6...v1.0.0-next.7) (2021-12-11)
 
 
