@@ -20,7 +20,6 @@ esbuild.buildSync({
     'jest.config': 'src/jest.config.ts',
     'prettier.config': 'src/prettier.config.ts',
     'stylelint.config': 'src/stylelint.config.ts',
-    'postcss-styl': 'src/postcss-styl.ts',
     'jest/fileMock': 'src/jest/fileMock.ts',
     'jest/setupFiles': 'src/jest/setupFiles.ts',
   },
