@@ -10,7 +10,6 @@ esbuild.build({
   outfile: 'dist/index.js',
   minify: true,
   banner: { js: '#!/usr/bin/env node' },
-  watch: true,
 });
 
 esbuild.buildSync({
