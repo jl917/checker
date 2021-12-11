@@ -35,8 +35,8 @@ This is ...
 
 ```
 npm install husky
-npx husky add .husky/commit-msg 'npx jcheck --commit'
-npx husky add .husky/pre-commit "npm test && npm lint"
+npx husky add .husky/commit-msg 'npx jcheck commitlint'
+npx husky add .husky/pre-commit "npx jcheck all"
 
 ```
 

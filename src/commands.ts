@@ -159,7 +159,11 @@ export default [
     message: '❗️ commitlint',
     hint: 'use to git hook',
     run: () => {
-      execaSync(BIN_COMMITLINT, ['--edit', ...COMMITLINT_CONFIG_OPTION], STDIO_OPTION);
+      try {
+        execaSync(BIN_COMMITLINT, ['--edit', ...COMMITLINT_CONFIG_OPTION], STDIO_OPTION);
+      } catch {
+        // console.log('❗️ Error: tsc failed.');
+      }
     },
   },
   // 'markdownlint',
