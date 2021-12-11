@@ -1,3 +1,10 @@
+# [1.0.0-next.2](https://github.com/jl917/checker/compare/v1.0.0-next.1...v1.0.0-next.2) (2021-12-11)
+
+
+### Bug Fixes
+
+* 샘플 코드 제거, 경로 오류 수정, 스타일 lint오류 수정 ([4a99cb1](https://github.com/jl917/checker/commit/4a99cb14e95ee293c82e8d01d0d97f6d4413c0a4))
+
 # 1.0.0-next.1 (2021-12-11)
 
 
