@@ -1,3 +1,10 @@
+# [1.0.0-next.5](https://github.com/jl917/checker/compare/v1.0.0-next.4...v1.0.0-next.5) (2021-12-11)
+
+
+### Bug Fixes
+
+* release cache적용 ([87f89e1](https://github.com/jl917/checker/commit/87f89e1b44d73522a3ecb75c9f9452125d94376f))
+
 # [1.0.0-next.4](https://github.com/jl917/checker/compare/v1.0.0-next.3...v1.0.0-next.4) (2021-12-11)
 
 
