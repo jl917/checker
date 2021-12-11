@@ -1,5 +1,20 @@
 import { execaSync, execa } from 'execa';
-import { SUB_TSCONFIG_TMP_PATH, BIN_TSC, BIN_JEST, JEST_CONFIG_OPTION, STDIO_OPTION, BIN_ESLINT, ESLINT_EXT_OPTION, ESLINT_CONFIG_OPTION, SRC_DIRECTORY, BIN_STYLELINT, STYLELINT_CONFIG_OPTION, STYLELINT_SYNTAX_STYLUS, STYLELINT_CSS_PATTERN, STYLELINT_STYLUS_PATTERN } from './constants';
+import {
+  SUB_TSCONFIG_TMP_PATH,
+  BIN_TSC,
+  BIN_JEST,
+  JEST_CONFIG_OPTION,
+  STDIO_OPTION,
+  BIN_ESLINT,
+  ESLINT_EXT_OPTION,
+  ESLINT_CONFIG_OPTION,
+  SRC_DIRECTORY,
+  BIN_STYLELINT,
+  STYLELINT_CONFIG_OPTION,
+  STYLELINT_SYNTAX_STYLUS,
+  STYLELINT_CSS_PATTERN,
+  STYLELINT_STYLUS_PATTERN,
+} from './constants';
 import { createTmpTsconfig } from './utils';
 
 export default [
@@ -20,46 +35,50 @@ export default [
     run: () => {
       createTmpTsconfig();
       try {
-        execaSync(BIN_TSC, ['--project', SUB_TSCONFIG_TMP_PATH], STDIO_OPTION)
+        execaSync(BIN_TSC, ['--project', SUB_TSCONFIG_TMP_PATH], STDIO_OPTION);
       } catch {
         // console.log('❗️ Error: tsc failed.');
       } finally {
         execaSync('rm', ['-rf', SUB_TSCONFIG_TMP_PATH]);
       }
-    }
+    },
   },
   {
     name: 'test',
     message: 'test',
     run: () => {
       try {
-        execaSync(BIN_JEST, [JEST_CONFIG_OPTION, '--passWithNoTests'], STDIO_OPTION)
+        execaSync(BIN_JEST, [JEST_CONFIG_OPTION, '--passWithNoTests'], STDIO_OPTION);
       } catch {
         // console.log('❗️ Error: tsc failed.');
       }
-    }
+    },
   },
   {
     name: 'testCoverage',
     message: 'test(coverage)',
     run: () => {
       try {
-        execaSync(BIN_JEST, [JEST_CONFIG_OPTION, '--passWithNoTests', '--coverage'], STDIO_OPTION)
+        execaSync(BIN_JEST, [JEST_CONFIG_OPTION, '--passWithNoTests', '--coverage'], STDIO_OPTION);
       } catch {
         // console.log('❗️ Error: tsc failed.');
       }
-    }
+    },
   },
   {
     name: 'testOnlyChange',
     message: 'test(onlyChanged)',
     run: () => {
       try {
-        execaSync(BIN_JEST, [JEST_CONFIG_OPTION, '--passWithNoTests', '--onlyChanged', '--coverage'], STDIO_OPTION)
+        execaSync(
+          BIN_JEST,
+          [JEST_CONFIG_OPTION, '--passWithNoTests', '--onlyChanged', '--coverage'],
+          STDIO_OPTION,
+        );
       } catch {
         // console.log('❗️ Error: tsc failed.');
       }
-    }
+    },
   },
   // { name: 'jestWithTag', message: 'test(withTag)' },
   {
@@ -67,22 +86,30 @@ export default [
     message: 'eslint',
     run: () => {
       try {
-        execaSync(BIN_ESLINT, [...ESLINT_EXT_OPTION, SRC_DIRECTORY, ...ESLINT_CONFIG_OPTION], STDIO_OPTION)
+        execaSync(
+          BIN_ESLINT,
+          [...ESLINT_EXT_OPTION, SRC_DIRECTORY, ...ESLINT_CONFIG_OPTION],
+          STDIO_OPTION,
+        );
       } catch {
         // console.log('❗️ Error: tsc failed.');
       }
-    }
+    },
   },
   {
     name: 'eslintFix',
     message: 'eslint(fix)',
     run: () => {
       try {
-        execaSync(BIN_ESLINT, [...ESLINT_EXT_OPTION, SRC_DIRECTORY, ...ESLINT_CONFIG_OPTION, '--fix'], STDIO_OPTION)
+        execaSync(
+          BIN_ESLINT,
+          [...ESLINT_EXT_OPTION, SRC_DIRECTORY, ...ESLINT_CONFIG_OPTION, '--fix'],
+          STDIO_OPTION,
+        );
       } catch {
         // console.log('❗️ Error: tsc failed.');
       }
-    }
+    },
   },
   {
     name: 'stylelint',
@@ -90,23 +117,40 @@ export default [
     run: () => {
       try {
         execa(BIN_STYLELINT, [STYLELINT_CSS_PATTERN, ...STYLELINT_CONFIG_OPTION], STDIO_OPTION);
-        execa(BIN_STYLELINT, [STYLELINT_STYLUS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_SYNTAX_STYLUS], STDIO_OPTION);
+        execa(
+          BIN_STYLELINT,
+          [STYLELINT_STYLUS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_SYNTAX_STYLUS],
+          STDIO_OPTION,
+        );
       } catch {
         // console.log('❗️ Error: tsc failed.');
       }
-    }
+    },
   },
   {
     name: 'stylelintFix',
     message: 'stylelint(fix)',
     run: () => {
       try {
-        execa(BIN_STYLELINT, [STYLELINT_CSS_PATTERN, ...STYLELINT_CONFIG_OPTION, '--fix'], STDIO_OPTION);
-        execa(BIN_STYLELINT, [STYLELINT_STYLUS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_SYNTAX_STYLUS, '--fix'], STDIO_OPTION);
+        execa(
+          BIN_STYLELINT,
+          [STYLELINT_CSS_PATTERN, ...STYLELINT_CONFIG_OPTION, '--fix'],
+          STDIO_OPTION,
+        );
+        execa(
+          BIN_STYLELINT,
+          [
+            STYLELINT_STYLUS_PATTERN,
+            ...STYLELINT_CONFIG_OPTION,
+            ...STYLELINT_SYNTAX_STYLUS,
+            '--fix',
+          ],
+          STDIO_OPTION,
+        );
       } catch {
         // console.log('❗️ Error: tsc failed.');
       }
-    }
+    },
   },
   // 'markdownlint',
   // 'htmlhint',

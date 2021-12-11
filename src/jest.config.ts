@@ -24,9 +24,7 @@ export default {
       functions: 0,
       lines: 0,
       statements: 0,
-    }
+    },
   },
-  collectCoverageFrom: [
-    `${resolve('./src/')}/**/*.{js,jsx,ts,tsx}`,
-  ]
+  collectCoverageFrom: [`${resolve('./src/')}/**/*.{js,jsx,ts,tsx}`],
 };

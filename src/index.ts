@@ -5,20 +5,21 @@ const argv = process.argv[2];
 const matchArg = COMMAND_NAMES.includes(process.argv[2]);
 
 const mainTask = (command: string) => {
-  if(command === 'all'){
+  if (command === 'all') {
     COMMANDS.tsc();
     COMMANDS.test();
     COMMANDS.eslint();
     COMMANDS.stylelint();
     return '';
   }
-  if(command === 'fix'){
+  if (command === 'fix') {
     COMMANDS.eslintFix();
     COMMANDS.stylelintFix();
     return '';
   }
   COMMANDS[command]();
-}
+  return '';
+};
 
 const questionTask = async () => {
   const answer: any = await prompt({
@@ -26,8 +27,10 @@ const questionTask = async () => {
     name: 'command',
     message: '🤖 Select a command',
     choices: COMMANDS_QUESTIONS,
-  })
+  });
   mainTask(answer.command);
-}
+  return '';
+};
 
-matchArg ? mainTask(argv) : questionTask()
+// eslint-disable-next-line
+matchArg ? mainTask(argv) : questionTask();

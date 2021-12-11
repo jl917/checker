@@ -11,7 +11,9 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "build": "node build"
+    "build": "node build",
+    "lint": "eslint --ext .js,.ts ./src/",
+    "fix": "eslint --fix --ext .js,.ts ./src/"
   },
   "repository": {
     "type": "git",
@@ -53,6 +55,7 @@
     "eslint-config-airbnb": "^19.0.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",

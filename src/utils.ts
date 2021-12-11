@@ -13,7 +13,7 @@ export const getBinPath = () => {
     binPath = localPath;
   }
   return binPath;
-}
+};
 
 export const createTmpTsconfig = () => {
   // get root tsconfig
