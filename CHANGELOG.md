@@ -1,3 +1,10 @@
+# [1.0.0-next.9](https://github.com/jl917/checker/compare/v1.0.0-next.8...v1.0.0-next.9) (2021-12-11)
+
+
+### Bug Fixes
+
+* commitlint config export 변경 ([1249166](https://github.com/jl917/checker/commit/1249166f1032a5421a953974edc01aefc46ab105))
+
 # [1.0.0-next.8](https://github.com/jl917/checker/compare/v1.0.0-next.7...v1.0.0-next.8) (2021-12-11)
 
 
