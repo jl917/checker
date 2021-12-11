@@ -1,3 +1,10 @@
+# [1.0.0-next.11](https://github.com/jl917/checker/compare/v1.0.0-next.10...v1.0.0-next.11) (2021-12-11)
+
+
+### Bug Fixes
+
+* execa sync로 변경 ([9dc626e](https://github.com/jl917/checker/commit/9dc626ef9bd3f4657848ad36cf7e2d54708b37a1))
+
 # [1.0.0-next.10](https://github.com/jl917/checker/compare/v1.0.0-next.9...v1.0.0-next.10) (2021-12-11)
 
 
