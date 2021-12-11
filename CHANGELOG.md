@@ -1,3 +1,10 @@
+# [1.0.0-next.12](https://github.com/jl917/checker/compare/v1.0.0-next.11...v1.0.0-next.12) (2021-12-11)
+
+
+### Bug Fixes
+
+* rollback ([9cf5523](https://github.com/jl917/checker/commit/9cf5523190bda0bf8d90bb4eac9f5ecd2d07e0ca))
+
 # [1.0.0-next.11](https://github.com/jl917/checker/compare/v1.0.0-next.10...v1.0.0-next.11) (2021-12-11)
 
 
