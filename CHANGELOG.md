@@ -1,3 +1,11 @@
+# [1.0.0-next.13](https://github.com/jl917/checker/compare/v1.0.0-next.12...v1.0.0-next.13) (2021-12-11)
+
+
+### Bug Fixes
+
+* catch thorw error ([633b8e1](https://github.com/jl917/checker/commit/633b8e192c262d730322b710bef671d0521614f4))
+* npm cache 설정 ([fdef9fe](https://github.com/jl917/checker/commit/fdef9fef47410f4f460e06d3577e8e2009c0f085))
+
 # [1.0.0-next.12](https://github.com/jl917/checker/compare/v1.0.0-next.11...v1.0.0-next.12) (2021-12-11)
 
 
