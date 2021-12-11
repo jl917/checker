@@ -159,7 +159,7 @@ export default [
     message: '❗️ commitlint',
     hint: 'use to git hook',
     run: () => {
-      execa(BIN_COMMITLINT, ['--edit', ...COMMITLINT_CONFIG_OPTION], STDIO_OPTION);
+      execaSync(BIN_COMMITLINT, ['--edit', ...COMMITLINT_CONFIG_OPTION], STDIO_OPTION);
     },
   },
   // 'markdownlint',
