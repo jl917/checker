@@ -10,10 +10,12 @@ import {
   ESLINT_CONFIG_OPTION,
   SRC_DIRECTORY,
   BIN_STYLELINT,
+  BIN_COMMITLINT,
   STYLELINT_CONFIG_OPTION,
   STYLELINT_SYNTAX_STYLUS,
   STYLELINT_CSS_PATTERN,
   STYLELINT_STYLUS_PATTERN,
+  COMMITLINT_CONFIG_OPTION,
 } from './constants';
 import { createTmpTsconfig } from './utils';
 
@@ -147,6 +149,18 @@ export default [
           ],
           STDIO_OPTION,
         );
+      } catch {
+        // console.log('❗️ Error: tsc failed.');
+      }
+    },
+  },
+  {
+    name: 'commitlint',
+    message: '❗️ commitlint',
+    hint: 'use to git hook',
+    run: () => {
+      try {
+        execa(BIN_COMMITLINT, ['--edit', ...COMMITLINT_CONFIG_OPTION], STDIO_OPTION);
       } catch {
         // console.log('❗️ Error: tsc failed.');
       }

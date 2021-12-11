@@ -15,6 +15,7 @@ export const BIN_TSC = `${BIN_PATH}/tsc`;
 export const BIN_JEST = `${BIN_PATH}/jest`;
 export const BIN_ESLINT = `${BIN_PATH}/eslint`;
 export const BIN_STYLELINT = `${BIN_PATH}/stylelint`;
+export const BIN_COMMITLINT = `${BIN_PATH}/commitlint`;
 
 export const JEST_CONFIG_OPTION = `--config=${resolve(__dirname, './jest.config.js')}`;
 export const ESLINT_EXT_OPTION = ['--ext', '.jsx,.js,.ts,.tsx,.mjs,.cjs'];
@@ -23,6 +24,7 @@ export const STYLELINT_CONFIG_OPTION = ['--config', resolve(__dirname, './stylel
 export const STYLELINT_SYNTAX_STYLUS = ['--custom-syntax', resolve(BIN_PATH, '../postcss-styl')];
 export const STYLELINT_CSS_PATTERN = './src/**/*.css';
 export const STYLELINT_STYLUS_PATTERN = './src/**/*.(styl|stylus)';
+export const COMMITLINT_CONFIG_OPTION = ['--config', resolve(__dirname, './commitlint.config.js')];
 
 export const COMMANDS_QUESTIONS = commands.map(({ name, message, hint }) => ({
   name,
