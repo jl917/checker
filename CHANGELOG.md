@@ -1,3 +1,21 @@
+## [1.0.2](https://github.com/jl917/checker/compare/v1.0.1...v1.0.2) (2021-12-12)
+
+
+### Bug Fixes
+
+* cache 제거 ([5e984a8](https://github.com/jl917/checker/commit/5e984a836a710d4bd247c269aaa2ae6ad6a68f69))
+* catch thorw error ([633b8e1](https://github.com/jl917/checker/commit/633b8e192c262d730322b710bef671d0521614f4))
+* commitlint config export 변경 ([1249166](https://github.com/jl917/checker/commit/1249166f1032a5421a953974edc01aefc46ab105))
+* commitlint 오류 수정 ([c9c64b3](https://github.com/jl917/checker/commit/c9c64b39ff98c6e4a8c2296ba8a2c275af6b399c))
+* commitlint추가 ([8f4883c](https://github.com/jl917/checker/commit/8f4883c63c7c46a384dc2d98f584b2ace7020bb8)), closes [#17](https://github.com/jl917/checker/issues/17)
+* esbuild 패키지 추가 ([e77be4f](https://github.com/jl917/checker/commit/e77be4f6e7f29b8eeec0f86888e23b1e32951dd2))
+* execa sync로 변경 ([9dc626e](https://github.com/jl917/checker/commit/9dc626ef9bd3f4657848ad36cf7e2d54708b37a1))
+* less lint ignore ([65895a4](https://github.com/jl917/checker/commit/65895a441006eb886a0d391795b93eb29618569a))
+* npm cache 설정 ([fdef9fe](https://github.com/jl917/checker/commit/fdef9fef47410f4f460e06d3577e8e2009c0f085))
+* rollback ([9cf5523](https://github.com/jl917/checker/commit/9cf5523190bda0bf8d90bb4eac9f5ecd2d07e0ca))
+* scss, sass lint 룰 추가 ([08c2a08](https://github.com/jl917/checker/commit/08c2a08cc98c813a9d67adeb7267d0279faec77f)), closes [#2](https://github.com/jl917/checker/issues/2)
+* stylelint less 추가 ([ea49afb](https://github.com/jl917/checker/commit/ea49afbe8e2e30c995dbdbdc04c2844fb4a50d5c)), closes [#3](https://github.com/jl917/checker/issues/3)
+
 ## [1.0.1](https://github.com/jl917/checker/compare/v1.0.0...v1.0.1) (2021-12-11)
 
 
