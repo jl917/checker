@@ -1,3 +1,10 @@
+# [1.0.0-next.14](https://github.com/jl917/checker/compare/v1.0.0-next.13...v1.0.0-next.14) (2021-12-12)
+
+
+### Bug Fixes
+
+* scss, sass lint 룰 추가 ([08c2a08](https://github.com/jl917/checker/commit/08c2a08cc98c813a9d67adeb7267d0279faec77f)), closes [#2](https://github.com/jl917/checker/issues/2)
+
 # [1.0.0-next.13](https://github.com/jl917/checker/compare/v1.0.0-next.12...v1.0.0-next.13) (2021-12-11)
 
 
