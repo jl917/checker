@@ -1,3 +1,11 @@
+# [1.0.0-next.15](https://github.com/jl917/checker/compare/v1.0.0-next.14...v1.0.0-next.15) (2021-12-12)
+
+
+### Bug Fixes
+
+* esbuild 패키지 추가 ([e77be4f](https://github.com/jl917/checker/commit/e77be4f6e7f29b8eeec0f86888e23b1e32951dd2))
+* stylelint less 추가 ([ea49afb](https://github.com/jl917/checker/commit/ea49afbe8e2e30c995dbdbdc04c2844fb4a50d5c)), closes [#3](https://github.com/jl917/checker/issues/3)
+
 # [1.0.0-next.14](https://github.com/jl917/checker/compare/v1.0.0-next.13...v1.0.0-next.14) (2021-12-12)
 
 
