@@ -24,6 +24,7 @@ export const STYLELINT_CONFIG_OPTION = ['--config', resolve(__dirname, './stylel
 export const STYLELINT_SYNTAX_STYLUS = ['--custom-syntax', resolve(BIN_PATH, '../postcss-styl')];
 export const STYLELINT_CSS_PATTERN = './src/**/*.css';
 export const STYLELINT_STYLUS_PATTERN = './src/**/*.(styl|stylus)';
+export const STYLELINT_SASS_PATTERN = './src/**/*.(sass|scss)';
 export const COMMITLINT_CONFIG_OPTION = ['--config', resolve(__dirname, './commitlint.config.js')];
 
 export const COMMANDS_QUESTIONS = commands.map(({ name, message, hint }) => ({
