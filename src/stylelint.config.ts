@@ -3,6 +3,6 @@ module.exports = {
     'stylelint-config-standard',
     'stylelint-plugin-stylus/standard',
     'stylelint-config-standard-scss',
-    'stylelint-config-recommended-less',
+    // 'stylelint-config-recommended-less',
   ],
 };
