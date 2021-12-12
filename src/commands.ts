@@ -12,11 +12,13 @@ import {
   BIN_STYLELINT,
   BIN_COMMITLINT,
   STYLELINT_CONFIG_OPTION,
-  STYLELINT_SYNTAX_STYLUS,
+  STYLELINT_STYLUS_SYNTAX,
+  STYLELINT_LESS_SYNTAX,
   STYLELINT_CSS_PATTERN,
   STYLELINT_STYLUS_PATTERN,
   COMMITLINT_CONFIG_OPTION,
   STYLELINT_SASS_PATTERN,
+  STYLELINT_LESS_PATTERN
 } from './constants';
 import { createTmpTsconfig } from './utils';
 
@@ -123,7 +125,12 @@ export default [
         execa(BIN_STYLELINT, [STYLELINT_SASS_PATTERN, ...STYLELINT_CONFIG_OPTION], STDIO_OPTION);
         execa(
           BIN_STYLELINT,
-          [STYLELINT_STYLUS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_SYNTAX_STYLUS],
+          [STYLELINT_LESS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_LESS_SYNTAX],
+          STDIO_OPTION,
+        );
+        execa(
+          BIN_STYLELINT,
+          [STYLELINT_STYLUS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_STYLUS_SYNTAX],
           STDIO_OPTION,
         );
       } catch {
@@ -149,9 +156,19 @@ export default [
         execa(
           BIN_STYLELINT,
           [
+            STYLELINT_LESS_PATTERN,
+            ...STYLELINT_CONFIG_OPTION,
+            ...STYLELINT_LESS_SYNTAX,
+            '--fix',
+          ],
+          STDIO_OPTION,
+        );
+        execa(
+          BIN_STYLELINT,
+          [
             STYLELINT_STYLUS_PATTERN,
             ...STYLELINT_CONFIG_OPTION,
-            ...STYLELINT_SYNTAX_STYLUS,
+            ...STYLELINT_STYLUS_SYNTAX,
             '--fix',
           ],
           STDIO_OPTION,
