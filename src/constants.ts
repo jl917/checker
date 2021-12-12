@@ -21,11 +21,14 @@ export const JEST_CONFIG_OPTION = `--config=${resolve(__dirname, './jest.config.
 export const ESLINT_EXT_OPTION = ['--ext', '.jsx,.js,.ts,.tsx,.mjs,.cjs'];
 export const ESLINT_CONFIG_OPTION = ['--config', `${resolve(__dirname, './eslintrc.js')}`];
 export const STYLELINT_CONFIG_OPTION = ['--config', resolve(__dirname, './stylelint.config.js')];
-export const STYLELINT_SYNTAX_STYLUS = ['--custom-syntax', resolve(BIN_PATH, '../postcss-styl')];
 export const STYLELINT_CSS_PATTERN = './src/**/*.css';
+export const STYLELINT_LESS_PATTERN = './src/**/*.less';
 export const STYLELINT_STYLUS_PATTERN = './src/**/*.(styl|stylus)';
 export const STYLELINT_SASS_PATTERN = './src/**/*.(sass|scss)';
 export const COMMITLINT_CONFIG_OPTION = ['--config', resolve(__dirname, './commitlint.config.js')];
+export const STYLELINT_STYLUS_SYNTAX = ['--custom-syntax', resolve(BIN_PATH, '../postcss-styl')];
+export const STYLELINT_LESS_SYNTAX = ['--custom-syntax', resolve(BIN_PATH, '../postcss-less')];
+
 
 export const COMMANDS_QUESTIONS = commands.map(({ name, message, hint }) => ({
   name,
