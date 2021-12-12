@@ -123,11 +123,11 @@ export default [
       try {
         execa(BIN_STYLELINT, [STYLELINT_CSS_PATTERN, ...STYLELINT_CONFIG_OPTION], STDIO_OPTION);
         execa(BIN_STYLELINT, [STYLELINT_SASS_PATTERN, ...STYLELINT_CONFIG_OPTION], STDIO_OPTION);
-        execa(
-          BIN_STYLELINT,
-          [STYLELINT_LESS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_LESS_SYNTAX],
-          STDIO_OPTION,
-        );
+        // execa(
+        //   BIN_STYLELINT,
+        //   [STYLELINT_LESS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_LESS_SYNTAX],
+        //   STDIO_OPTION,
+        // );
         execa(
           BIN_STYLELINT,
           [STYLELINT_STYLUS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_STYLUS_SYNTAX],
@@ -153,16 +153,16 @@ export default [
           [STYLELINT_SASS_PATTERN, ...STYLELINT_CONFIG_OPTION, '--fix'],
           STDIO_OPTION,
         );
-        execa(
-          BIN_STYLELINT,
-          [
-            STYLELINT_LESS_PATTERN,
-            ...STYLELINT_CONFIG_OPTION,
-            ...STYLELINT_LESS_SYNTAX,
-            '--fix',
-          ],
-          STDIO_OPTION,
-        );
+        // execa(
+        //   BIN_STYLELINT,
+        //   [
+        //     STYLELINT_LESS_PATTERN,
+        //     ...STYLELINT_CONFIG_OPTION,
+        //     ...STYLELINT_LESS_SYNTAX,
+        //     '--fix',
+        //   ],
+        //   STDIO_OPTION,
+        // );
         execa(
           BIN_STYLELINT,
           [
