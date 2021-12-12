@@ -1,3 +1,10 @@
+# [1.0.0-next.16](https://github.com/jl917/checker/compare/v1.0.0-next.15...v1.0.0-next.16) (2021-12-12)
+
+
+### Bug Fixes
+
+* less lint ignore ([65895a4](https://github.com/jl917/checker/commit/65895a441006eb886a0d391795b93eb29618569a))
+
 # [1.0.0-next.15](https://github.com/jl917/checker/compare/v1.0.0-next.14...v1.0.0-next.15) (2021-12-12)
 
 
