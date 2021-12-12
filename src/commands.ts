@@ -16,6 +16,7 @@ import {
   STYLELINT_CSS_PATTERN,
   STYLELINT_STYLUS_PATTERN,
   COMMITLINT_CONFIG_OPTION,
+  STYLELINT_SASS_PATTERN,
 } from './constants';
 import { createTmpTsconfig } from './utils';
 
@@ -119,6 +120,7 @@ export default [
     run: () => {
       try {
         execa(BIN_STYLELINT, [STYLELINT_CSS_PATTERN, ...STYLELINT_CONFIG_OPTION], STDIO_OPTION);
+        execa(BIN_STYLELINT, [STYLELINT_SASS_PATTERN, ...STYLELINT_CONFIG_OPTION], STDIO_OPTION);
         execa(
           BIN_STYLELINT,
           [STYLELINT_STYLUS_PATTERN, ...STYLELINT_CONFIG_OPTION, ...STYLELINT_SYNTAX_STYLUS],
@@ -137,6 +139,11 @@ export default [
         execa(
           BIN_STYLELINT,
           [STYLELINT_CSS_PATTERN, ...STYLELINT_CONFIG_OPTION, '--fix'],
+          STDIO_OPTION,
+        );
+        execa(
+          BIN_STYLELINT,
+          [STYLELINT_SASS_PATTERN, ...STYLELINT_CONFIG_OPTION, '--fix'],
           STDIO_OPTION,
         );
         execa(
