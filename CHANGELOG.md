@@ -1,3 +1,11 @@
+# [1.0.0-next.17](https://github.com/jl917/checker/compare/v1.0.0-next.16...v1.0.0-next.17) (2021-12-14)
+
+
+### Bug Fixes
+
+* cache 제거 ([5e984a8](https://github.com/jl917/checker/commit/5e984a836a710d4bd247c269aaa2ae6ad6a68f69))
+* markdown, html파일 지원 ([71b113f](https://github.com/jl917/checker/commit/71b113fb0143342ffe08e8563ad2c6c8690a51aa)), closes [#4](https://github.com/jl917/checker/issues/4) [#5](https://github.com/jl917/checker/issues/5)
+
 # [1.0.0-next.16](https://github.com/jl917/checker/compare/v1.0.0-next.15...v1.0.0-next.16) (2021-12-12)
 
 
