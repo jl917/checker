@@ -1,3 +1,10 @@
+# [1.0.0-next.18](https://github.com/jl917/checker/compare/v1.0.0-next.17...v1.0.0-next.18) (2021-12-14)
+
+
+### Bug Fixes
+
+* markdownlint.config 빌드파일 추가, constants  경로 수정 ([adbce4c](https://github.com/jl917/checker/commit/adbce4c0d4deef2de5bf4c5e2c758be5330135af))
+
 # [1.0.0-next.17](https://github.com/jl917/checker/compare/v1.0.0-next.16...v1.0.0-next.17) (2021-12-14)
 
 
