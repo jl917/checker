@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/jl917/checker/compare/v1.0.2...v1.0.3) (2021-12-14)
+
+
+### Bug Fixes
+
+* markdown, html파일 지원 ([71b113f](https://github.com/jl917/checker/commit/71b113fb0143342ffe08e8563ad2c6c8690a51aa)), closes [#4](https://github.com/jl917/checker/issues/4) [#5](https://github.com/jl917/checker/issues/5)
+* markdownlint.config 빌드파일 추가, constants  경로 수정 ([adbce4c](https://github.com/jl917/checker/commit/adbce4c0d4deef2de5bf4c5e2c758be5330135af))
+
 ## [1.0.2](https://github.com/jl917/checker/compare/v1.0.1...v1.0.2) (2021-12-12)
 
 
