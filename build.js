@@ -22,6 +22,7 @@ esbuild.buildSync({
     'stylelint.config': 'src/stylelint.config.ts',
     'jest/fileMock': 'src/jest/fileMock.ts',
     'jest/setupFiles': 'src/jest/setupFiles.ts',
+    'markdownlint.config': 'src/markdownlint.config.ts',
   },
   bundle: true,
   write: true,

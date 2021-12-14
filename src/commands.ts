@@ -18,12 +18,18 @@ import {
   STYLELINT_STYLUS_PATTERN,
   COMMITLINT_CONFIG_OPTION,
   STYLELINT_SASS_PATTERN,
-  // STYLELINT_LESS_PATTERN
+  // STYLELINT_LESS_PATTERN,
+  BIN_HTMLHINT,
+  HTMLHINT_EXT_PATTERN,
+  BIN_MARKDOWNLINT,
+  MARKDOWNLINT_EXT_PATTERN,
+  MARKDOWNLINT_CONFIG_OPTION,
+  MARKDOWNLINT_IGNORE_OPTION,
 } from './constants';
 import { createTmpTsconfig } from './utils';
 
 export default [
-  // { name: 'default', message: '🙈 default', hint: 'Run with default options' },
+  // { name: 'default', message: '🙈 default', hint: 'Run with options' },
   {
     name: 'all',
     message: '💯 all',
@@ -175,6 +181,52 @@ export default [
         );
       } catch {
         // console.log('❗️ Error: tsc failed.');
+      }
+    },
+  },
+  {
+    name: 'htmlhint',
+    message: 'htmlhint',
+    run: () => {
+      try {
+        execaSync(BIN_HTMLHINT, [HTMLHINT_EXT_PATTERN], STDIO_OPTION);
+      } catch {
+        // throw new Error('❗️ Error: htmlhint failed.');
+      }
+    },
+  },
+  {
+    name: 'markdownlint',
+    message: 'markdownlint',
+    run: () => {
+      try {
+        execaSync(
+          BIN_MARKDOWNLINT,
+          [...MARKDOWNLINT_CONFIG_OPTION, MARKDOWNLINT_EXT_PATTERN, ...MARKDOWNLINT_IGNORE_OPTION],
+          STDIO_OPTION,
+        );
+      } catch {
+        // throw new Error('❗️ Error: markdownlint failed.');
+      }
+    },
+  },
+  {
+    name: 'markdownlintFix',
+    message: 'markdownlint(fix)',
+    run: () => {
+      try {
+        execaSync(
+          BIN_MARKDOWNLINT,
+          [
+            ...MARKDOWNLINT_CONFIG_OPTION,
+            MARKDOWNLINT_EXT_PATTERN,
+            ...MARKDOWNLINT_IGNORE_OPTION,
+            '--fix',
+          ],
+          STDIO_OPTION,
+        );
+      } catch {
+        // throw new Error('❗️ Error: markdownlint failed.');
       }
     },
   },
