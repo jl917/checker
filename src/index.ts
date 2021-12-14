@@ -10,11 +10,14 @@ const mainTask = (command: string) => {
     COMMANDS.test();
     COMMANDS.eslint();
     COMMANDS.stylelint();
+    COMMANDS.htmlhint();
+    COMMANDS.markdownlint();
     return '';
   }
   if (command === 'fix') {
     COMMANDS.eslintFix();
     COMMANDS.stylelintFix();
+    COMMANDS.markdownlintFix();
     return '';
   }
   COMMANDS[command]();
