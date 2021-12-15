@@ -1,3 +1,11 @@
+# [1.0.0-next.19](https://github.com/jl917/checker/compare/v1.0.0-next.18...v1.0.0-next.19) (2021-12-15)
+
+
+### Bug Fixes
+
+* config 파일 추가 ([307a3b8](https://github.com/jl917/checker/commit/307a3b804f225bf7a2d8023d2400b61677fbab1d))
+* config기능 추가 ([635ea1e](https://github.com/jl917/checker/commit/635ea1ec516ad68e90fed412732d159ef26abac4)), closes [#33](https://github.com/jl917/checker/issues/33)
+
 # [1.0.0-next.18](https://github.com/jl917/checker/compare/v1.0.0-next.17...v1.0.0-next.18) (2021-12-14)
 
 
