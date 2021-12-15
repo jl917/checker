@@ -1,10 +1,21 @@
 import { prompt } from 'enquirer';
 import { COMMAND_NAMES, COMMANDS_QUESTIONS, COMMANDS } from './constants';
+import { getConfig } from './utils'
 
 const argv = process.argv[2];
 const matchArg = COMMAND_NAMES.includes(process.argv[2]);
 
 const mainTask = (command: string) => {
+  if (command === 'default') {
+    const config = getConfig();
+    config.tsc && COMMANDS.tsc();
+    config.test && COMMANDS.test();
+    config.eslint && COMMANDS.eslint();
+    config.stylelint && COMMANDS.stylelint();
+    config.htmlhint && COMMANDS.htmlhint();
+    config.markdownlint && COMMANDS.markdownlint();
+    return '';
+  }
   if (command === 'all') {
     COMMANDS.tsc();
     COMMANDS.test();
