@@ -20,7 +20,7 @@ export const getBinPath = () => {
   return binPath;
 };
 
-export const createTmpTsconfig = () => {
+export const createTmpTsconfig = (filePath) => {
   // get root tsconfig
   let tsconfig = require(ROOT_TSCONFIG_PATH);
   // get sub tsconfig
@@ -42,7 +42,7 @@ export const createTmpTsconfig = () => {
   };
 
   writeFileSync(
-    resolve('./tsconfig.tmp.json'),
+    filePath,
     new Uint8Array(Buffer.from(JSON.stringify(tsconfig))),
   );
 };
