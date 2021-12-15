@@ -8,6 +8,8 @@ export const ROOT_TSCONFIG_PATH = resolve(__dirname, '../tsconfig.json');
 export const SUB_TSCONFIG_PATH = resolve('./tsconfig.json');
 export const SUB_TSCONFIG_TMP_PATH = resolve('./tsconfig.tmp.json');
 export const SRC_DIRECTORY = resolve('./src');
+export const ROOT_JCHECK_CONFIG_PATH = resolve(__dirname, './jcheck.config.js');
+export const SUB_JCHECK_CONFIG_PATH = resolve('./jcheck.config.js');
 
 export const STDIO_OPTION: SyncOptions = { stdio: 'inherit' };
 

@@ -23,6 +23,7 @@ esbuild.buildSync({
     'jest/fileMock': 'src/jest/fileMock.ts',
     'jest/setupFiles': 'src/jest/setupFiles.ts',
     'markdownlint.config': 'src/markdownlint.config.ts',
+    'jchecker.config': 'src/jchecker.config.ts',
   },
   bundle: true,
   write: true,
