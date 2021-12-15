@@ -29,7 +29,7 @@ import {
 import { createTmpTsconfig } from './utils';
 
 export default [
-  // { name: 'default', message: '🙈 default', hint: 'Run with options' },
+  { name: 'default', message: '🙈 default', hint: 'Run with options' },
   {
     name: 'all',
     message: '💯 all',
