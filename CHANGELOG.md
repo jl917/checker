@@ -1,3 +1,10 @@
+# [1.0.0-next.20](https://github.com/jl917/checker/compare/v1.0.0-next.19...v1.0.0-next.20) (2021-12-15)
+
+
+### Bug Fixes
+
+* 빌드 스크립트 추가 ([c4e96f8](https://github.com/jl917/checker/commit/c4e96f87cb201a6e0767203506c2bcb2b4313b80))
+
 # [1.0.0-next.19](https://github.com/jl917/checker/compare/v1.0.0-next.18...v1.0.0-next.19) (2021-12-15)
 
 
