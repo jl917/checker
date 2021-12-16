@@ -1,12 +1,18 @@
 # title
 
-This is a...
+This is a tool for code inspection, testing, and message submission.
+
+Support the following files
+
+- .jsx,.js,.ts,.tsx,.mjs,.cjs
+- .css,.stylus,.styl,.scss,.sass
+- .md
+- .html
 
 
 
 ## Table of Contents
 
-- [Background](#background)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Maintainers](#maintainers)
@@ -16,34 +22,66 @@ This is a...
 
 
 
-## Background
-
-
-
-
 ## Installation
 
-```js
-/**
- * -tsc: tsc
- * -test: jest (coverage, onlychange)
- * -es: eslint (fix)
- * -commit: commit
- * -style: stylelint (fix)
- */
+```sh
+# local
+npm install --save-dev @julong/checker
+# global
+npm install -g @julong/checker
 ```
 
-```
-npm install husky
-npx husky add .husky/commit-msg 'npx jcheck commitlint'
-npx husky add .husky/pre-commit "npx jcheck all"
-
-```
 
 
 ## Usage
 
+### step1. setting git hook
 
+```sh
+npm install husky
+npx husky add .husky/commit-msg 'npx jcheck commitlint'
+npx husky add .husky/pre-commit 'npx jcheck default'
+```
+
+
+
+### step2. jcheck.config.js(Can be omitted)
+
+```js
+// jcheck.config.js
+module.exports = {
+  tsc: true,
+  test: true,
+  eslint: true,
+  stylelint: true,
+  markdownlint: true,
+  htmlhint: true,
+};
+```
+
+
+
+## CLI Command
+
+```sh
+$ npx jcheck default
+```
+
+- default
+- all
+- fix
+- tsc
+- test
+- testCoverage
+- testOnlyChange
+- eslint
+- eslintFix
+- stylelint
+- stylelintFix
+- htmlhint
+- markdownlint
+- markdownlintFix
+- commitlint
 
 
 

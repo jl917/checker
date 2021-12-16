@@ -242,6 +242,4 @@ export default [
       }
     },
   },
-  // 'markdownlint',
-  // 'htmlhint',
 ];
