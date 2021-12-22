@@ -1,3 +1,13 @@
+# [1.0.0-next.21](https://github.com/jl917/checker/compare/v1.0.0-next.20...v1.0.0-next.21) (2021-12-22)
+
+
+### Bug Fixes
+
+* auto pr ([f4019a1](https://github.com/jl917/checker/commit/f4019a17a0731d0fe5aa21200844a1e312eabc2d))
+* readme ([131d1f2](https://github.com/jl917/checker/commit/131d1f25343764b373d1bb34c47707af44a044fc))
+* readme추가 코드 정리 ([29430eb](https://github.com/jl917/checker/commit/29430eb903f74c8f1ead9738e2c4c649940f0b88))
+* tmp 임시 파일 생성 위치 변경 ([94d2e9f](https://github.com/jl917/checker/commit/94d2e9fd45e6e6c07082eebd3303eedf8d1f670f))
+
 # [1.0.0-next.20](https://github.com/jl917/checker/compare/v1.0.0-next.19...v1.0.0-next.20) (2021-12-15)
 
 
