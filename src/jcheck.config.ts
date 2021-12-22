@@ -1,5 +1,3 @@
-import { resolve } from 'path';
-
 module.exports = {
   tsc: true,
   test: true,
