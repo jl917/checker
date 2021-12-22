@@ -1,3 +1,16 @@
+## [1.0.4](https://github.com/jl917/checker/compare/v1.0.3...v1.0.4) (2021-12-22)
+
+
+### Bug Fixes
+
+* auto pr ([f4019a1](https://github.com/jl917/checker/commit/f4019a17a0731d0fe5aa21200844a1e312eabc2d))
+* config 파일 추가 ([307a3b8](https://github.com/jl917/checker/commit/307a3b804f225bf7a2d8023d2400b61677fbab1d))
+* config기능 추가 ([635ea1e](https://github.com/jl917/checker/commit/635ea1ec516ad68e90fed412732d159ef26abac4)), closes [#33](https://github.com/jl917/checker/issues/33)
+* readme ([131d1f2](https://github.com/jl917/checker/commit/131d1f25343764b373d1bb34c47707af44a044fc))
+* readme추가 코드 정리 ([29430eb](https://github.com/jl917/checker/commit/29430eb903f74c8f1ead9738e2c4c649940f0b88))
+* tmp 임시 파일 생성 위치 변경 ([94d2e9f](https://github.com/jl917/checker/commit/94d2e9fd45e6e6c07082eebd3303eedf8d1f670f))
+* 빌드 스크립트 추가 ([c4e96f8](https://github.com/jl917/checker/commit/c4e96f87cb201a6e0767203506c2bcb2b4313b80))
+
 ## [1.0.3](https://github.com/jl917/checker/compare/v1.0.2...v1.0.3) (2021-12-14)
 
 
