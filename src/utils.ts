@@ -1,6 +1,11 @@
 import { resolve } from 'path';
 import { lstatSync, writeFileSync } from 'fs-extra';
-import { ROOT_TSCONFIG_PATH, SUB_TSCONFIG_PATH } from './constants';
+import {
+  ROOT_TSCONFIG_PATH,
+  SUB_TSCONFIG_PATH,
+  ROOT_JCHECK_CONFIG_PATH,
+  SUB_JCHECK_CONFIG_PATH,
+} from './constants';
 
 export const getBinPath = () => {
   const globalPath = resolve(__dirname, '../../node_modules/.bin');
@@ -15,7 +20,7 @@ export const getBinPath = () => {
   return binPath;
 };
 
-export const createTmpTsconfig = () => {
+export const createTmpTsconfig = (filePath) => {
   // get root tsconfig
   let tsconfig = require(ROOT_TSCONFIG_PATH);
   // get sub tsconfig
@@ -37,7 +42,21 @@ export const createTmpTsconfig = () => {
   };
 
   writeFileSync(
-    resolve('./tsconfig.tmp.json'),
+    filePath,
     new Uint8Array(Buffer.from(JSON.stringify(tsconfig))),
   );
+};
+
+export const getConfig = () => {
+  const config = require(ROOT_JCHECK_CONFIG_PATH);
+  let subConfig;
+  try {
+    subConfig = require(SUB_JCHECK_CONFIG_PATH);
+  } catch (error) {
+    console.log('✅ No sub jcheck config file found.');
+  }
+  return {
+    ...config,
+    ...subConfig,
+  };
 };

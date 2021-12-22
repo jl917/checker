@@ -1,6 +1,6 @@
 import { execaSync, execa } from 'execa';
 import {
-  SUB_TSCONFIG_TMP_PATH,
+  TSCONFIG_TMP_PATH,
   BIN_TSC,
   BIN_JEST,
   JEST_CONFIG_OPTION,
@@ -29,7 +29,7 @@ import {
 import { createTmpTsconfig } from './utils';
 
 export default [
-  // { name: 'default', message: '🙈 default', hint: 'Run with options' },
+  { name: 'default', message: '🙈 default', hint: 'Run with options' },
   {
     name: 'all',
     message: '💯 all',
@@ -44,13 +44,13 @@ export default [
     name: 'tsc',
     message: 'tsc',
     run: () => {
-      createTmpTsconfig();
+      createTmpTsconfig(TSCONFIG_TMP_PATH);
       try {
-        execaSync(BIN_TSC, ['--project', SUB_TSCONFIG_TMP_PATH], STDIO_OPTION);
+        execaSync(BIN_TSC, ['--project', TSCONFIG_TMP_PATH], STDIO_OPTION);
       } catch {
         // console.log('❗️ Error: tsc failed.');
       } finally {
-        execaSync('rm', ['-rf', SUB_TSCONFIG_TMP_PATH]);
+        execaSync('rm', ['-rf', TSCONFIG_TMP_PATH]);
       }
     },
   },
@@ -242,6 +242,4 @@ export default [
       }
     },
   },
-  // 'markdownlint',
-  // 'htmlhint',
 ];
