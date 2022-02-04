@@ -1,3 +1,11 @@
+# [1.0.0-next.23](https://github.com/jl917/checker/compare/v1.0.0-next.22...v1.0.0-next.23) (2022-02-04)
+
+
+### Bug Fixes
+
+* console추가 ([0e9b492](https://github.com/jl917/checker/commit/0e9b4923838604714973a4fe87aa15dc9ca44fcb))
+* resolve-plugins-relative-to 추가 ([077c5cb](https://github.com/jl917/checker/commit/077c5cb68c4eba49ca458a74e228b1a799499523))
+
 # [1.0.0-next.22](https://github.com/jl917/checker/compare/v1.0.0-next.21...v1.0.0-next.22) (2022-02-04)
 
 
