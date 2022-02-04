@@ -1,3 +1,10 @@
+# [1.0.0-next.24](https://github.com/jl917/checker/compare/v1.0.0-next.23...v1.0.0-next.24) (2022-02-04)
+
+
+### Bug Fixes
+
+* console.log 제거 ([d84b47c](https://github.com/jl917/checker/commit/d84b47ce655da64573d3ff70bce83f3590a505f7))
+
 # [1.0.0-next.23](https://github.com/jl917/checker/compare/v1.0.0-next.22...v1.0.0-next.23) (2022-02-04)
 
 
