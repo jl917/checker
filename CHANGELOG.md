@@ -1,3 +1,10 @@
+# [1.0.0-next.25](https://github.com/jl917/checker/compare/v1.0.0-next.24...v1.0.0-next.25) (2022-02-04)
+
+
+### Bug Fixes
+
+* 배포 ([2707c36](https://github.com/jl917/checker/commit/2707c361e1b3f0264799cc989414c2fa8cf63edc))
+
 # [1.0.0-next.24](https://github.com/jl917/checker/compare/v1.0.0-next.23...v1.0.0-next.24) (2022-02-04)
 
 
