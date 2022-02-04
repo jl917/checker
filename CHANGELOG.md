@@ -1,3 +1,10 @@
+# [1.0.0-next.22](https://github.com/jl917/checker/compare/v1.0.0-next.21...v1.0.0-next.22) (2022-02-04)
+
+
+### Bug Fixes
+
+* global path 수정 ([9209bcb](https://github.com/jl917/checker/commit/9209bcb7b34dd2a59578e6598672ce2e40bd39df))
+
 # [1.0.0-next.21](https://github.com/jl917/checker/compare/v1.0.0-next.20...v1.0.0-next.21) (2021-12-22)
 
 
