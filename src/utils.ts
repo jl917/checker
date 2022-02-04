@@ -8,7 +8,7 @@ import {
 } from './constants';
 
 export const getBinPath = () => {
-  const globalPath = resolve(__dirname, '../../node_modules/.bin');
+  const globalPath = resolve(__dirname, '../node_modules/.bin');
   const localPath = resolve(__dirname, '../../../.bin');
   let binPath;
   try {
