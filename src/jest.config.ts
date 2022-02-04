@@ -28,3 +28,4 @@ export default {
   },
   collectCoverageFrom: [`${resolve('./src/')}/**/*.{js,jsx,ts,tsx}`],
 };
+
