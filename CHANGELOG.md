@@ -1,3 +1,14 @@
+## [1.0.5](https://github.com/jl917/checker/compare/v1.0.4...v1.0.5) (2022-02-04)
+
+
+### Bug Fixes
+
+* console.log 제거 ([d84b47c](https://github.com/jl917/checker/commit/d84b47ce655da64573d3ff70bce83f3590a505f7))
+* console추가 ([0e9b492](https://github.com/jl917/checker/commit/0e9b4923838604714973a4fe87aa15dc9ca44fcb))
+* global path 수정 ([9209bcb](https://github.com/jl917/checker/commit/9209bcb7b34dd2a59578e6598672ce2e40bd39df))
+* resolve-plugins-relative-to 추가 ([077c5cb](https://github.com/jl917/checker/commit/077c5cb68c4eba49ca458a74e228b1a799499523))
+* 배포 ([2707c36](https://github.com/jl917/checker/commit/2707c361e1b3f0264799cc989414c2fa8cf63edc))
+
 ## [1.0.4](https://github.com/jl917/checker/compare/v1.0.3...v1.0.4) (2021-12-22)
 
 
