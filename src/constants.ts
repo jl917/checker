@@ -23,7 +23,7 @@ export const BIN_MARKDOWNLINT = `${BIN_PATH}/markdownlint`;
 
 export const JEST_CONFIG_OPTION = `--config=${resolve(__dirname, './jest.config.js')}`;
 export const ESLINT_EXT_OPTION = ['--ext', '.jsx,.js,.ts,.tsx,.mjs,.cjs'];
-export const ESLINT_CONFIG_OPTION = ['--config', `${resolve(__dirname, './eslintrc.js')}`];
+export const ESLINT_CONFIG_OPTION = ['--config', resolve(__dirname, './eslintrc.js'), '--resolve-plugins-relative-to', resolve(__dirname, '../')];
 export const STYLELINT_CONFIG_OPTION = ['--config', resolve(__dirname, './stylelint.config.js')];
 export const STYLELINT_CSS_PATTERN = './src/**/*.css';
 export const STYLELINT_LESS_PATTERN = './src/**/*.less';

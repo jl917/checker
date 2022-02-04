@@ -17,6 +17,8 @@ export const getBinPath = () => {
   } catch {
     binPath = localPath;
   }
+  console.log('isLocal', binPath === localPath)
+  console.log('isGlobal', binPath === globalPath)
   return binPath;
 };
 
